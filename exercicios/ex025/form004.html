@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        fieldset {
+            background-color: darkgray;
+            color: white;
+            
+            font-weight: bolder;
+            padding: 10px;
+            width: 98vw;
+            position: relative;
+        }
+
+        legend {
+            padding: 10px;
+            background-color: yellow;
+            color: blue;
+            
+        }
+
+        html, body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            margin: 30px auto 40px auto;
+            text-align: center;
+            color: yellow;
+        }
+
+        p {
+            padding: 8px;
+            
+        }
+
+        input {
+            border-radius: 2px;
+            padding: 5px;
+            
+
+            
+        }
+
+        input#inome {
+            position: absolute;
+            left: 8%;
+            top: 12px;
+        }
+
+        input#iemail {
+            position: absolute;
+            left: 8%;
+            top: 45px;
+        }
+
+        input#numero {
+            position: absolute;
+            left: 8%;
+            top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required placeholder="">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="numero">Número</label>
+                <input type="tel" name="numer" id="numero" autocomplete="tel" pattern="^\d{4}-\d{4}$" maxlength="11" minlength="11">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </fieldset>
+
+    </form>
+</body>
+</html>

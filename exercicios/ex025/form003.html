@@ -8,29 +8,37 @@
 <body>
     <h1>Teste de formulário</h1>
 
-    <form action="cadastro.php" method="post"></form>
+    <form action="cadastro.php" method="post">
 
-    <p>
+        <p>
         <label for="inome">Nome</label>
         <input type="text" name="nome" id="inome">
-    </p>
+        </p>
 
-    <p>
-        <label for="idata">Data</label>
-        <input type="date" name="data" id="idata">
+        <p>
+            <label for="idata">Data</label>
+            <input type="date" name="data" id="idata">
 
-    </p>
+        </p>
 
-    <p>
-        <label for="inota">Período da prova</label>
-        <input type="month" name="nota" id="inota">
-    </p>
+        <p>
+            <label for="inota">Período da prova</label>
+            <input type="month" name="nota" id="inota">
+        </p>
 
-    <p>
-        <label for="imedia">Média</label>
-        <input type="number" name="media" id="imedia" step="0.1" min="0" max="10"
-        placeholder="0 a 10">
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" step="0.1" min="0" max="10"
+            placeholder="0 a 10">
 
-    </p>
+        </p>
+
+        <p>
+            
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+        </p>
+
+    </form>
 </body>
 </html>
