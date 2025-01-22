@@ -89,3 +89,16 @@ article p {
     line-height: 2.5em;
 }
 
+span#burger {
+    background-color: rgb(54, 54, 54);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+span#burger:hover {
+    background-color: white;
+    color: black;
+}
