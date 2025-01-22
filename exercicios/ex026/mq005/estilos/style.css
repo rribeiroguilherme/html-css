@@ -49,6 +49,7 @@ header a {
     margin: 0px;
     font-weight: bolder;
     border: 1px solid lightgray;
+    transition: 0.6s;
 
 }
 
@@ -95,6 +96,8 @@ span#burger {
     padding: 10px;
     text-align: center;
     color: white;
+    cursor: pointer;
+    transition: 0.6s;
 }
 
 
