@@ -33,6 +33,7 @@ header h1 {
 header menu {
     background-color: rgb(151, 151, 151);
     padding: 5px;
+    display: block;
     
 }
 
@@ -84,3 +85,6 @@ main h2 {
     padding: 10px;
 }
 
+span#burger {
+    display: none;
+}
