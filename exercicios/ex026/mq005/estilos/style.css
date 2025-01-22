@@ -34,7 +34,7 @@ header h1 {
 
 header menu {
     background-color: rgb(151, 151, 151);
-    display: block;
+    display: none;
     margin: 0px;
     
 }
